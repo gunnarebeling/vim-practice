@@ -20,28 +20,26 @@ type TaskStore struct {
 	nextID int
 }
 
-func NewTaskStore() *TaskStoRuu{
+func NewTaskStore() *TaskStore {
 	return &TaskStore{
 		tasks:  []Task{},
 		nextID: 1,
 	}
 }
 
-func (s *TaskStore) Add(title string) Task {
 	s.mu.Lock()
 	defer s.mu.Unlock()
 
-	task := Task{
-		ID:        s.nextID,
-		Title:     title,
-		Completed: false,
-	}
+task := Task{
+	id:        s.nextid,
+	title:     title,
+	Completed: false,
+}
 
 	s.tasks = append(s.tasks, task)
 	s.nextID++
 	return task
 }
-
 func (s *TaskStore) All() []Task {
 	s.mu.RLock()
 	defer s.mu.RUnlock()
@@ -50,6 +48,7 @@ func (s *TaskStore) All() []Task {
 	copy(result, s.tasks)
 	return result
 }
+
 
 func (s *TaskStore) Toggle(id int) *Task {
 	s.mu.Lock()
@@ -89,7 +88,7 @@ func main() {
 	http.HandleFunc("/tasks/delete/", handleDeleteTask)
 	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 
-	println("Server running at http://localhost:8080")
+	println("Task Manager server running at http://localhost:8080")
 	http.ListenAndServe(":8080", nil)
 }
 
