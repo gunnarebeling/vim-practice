@@ -1,0 +1,18 @@
+<li id="task-{{.ID}}" class="task {{if .Completed}}completed{{end}}">
+    <span class="task-title">{{.Title}}</span>
+    <div class="task-actions">
+        <button
+            hx-put="/tasks/toggle/{{.ID}}"
+            hx-target="#task-{{.ID}}"
+            hx-swap="outerHTML">
+            {{if .Completed}}Undo{{else}}Done{{end}}
+        </button>
+        <button
+            hx-delete="/tasks/delete/{{.ID}}"
+            hx-target="#task-{{.ID}}"
+            hx-swap="outerHTML"
+            class="delete">
+            Delete
+        </button>
+    </div>
+</li>

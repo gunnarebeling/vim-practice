@@ -1,0 +1,41 @@
+DELETE PRACTICE FILE
+====================
+
+Practice x (delete character):
+FIX this word has extra letters
+Hello world
+Remove the double letters
+
+Practice dw (delete word):
+Delete the UNWANTED word from this sentence
+This sentence has too many words in it
+Remove from this line
+Keep this line
+Keep this line
+Keep this line
+Keep this line
+
+Keep this part
+Important stuff
+First half good
+
+0 (delete to start of line):
+Keep this part
+Save this ending
+but not this
+
+This line stays
+
+word word word word word word word keep these words
+
+Practice d with motions (dG, dgg, d/pattern):
+
+, keep the rest of this line
+Remove from the sentence
+: keep this part
+
+FINAL CHALLENGE:
+Using only delete commands, clean up this messy paragraph:
+The quick REMOVE brown fox JUNK jumps jumps over
+the lazy TRASH dog and GARBAGE runs away
+into the forest DEBRIS at at night
