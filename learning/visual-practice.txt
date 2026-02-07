@@ -1,0 +1,110 @@
+// VISUAL MODE PRACTICE FILE
+
+// ============================================
+// LESSON 3.1: Character Visual Mode (v)
+// ============================================
+// Press 'v' to enter character visual mode
+// Move with any motion to extend selection
+// Then: d (delete), y (yank), c (change), > (indent)
+
+function greet(name) {
+    console.log("Hello, " + name + "!");
+}
+
+// TRY: Position on "Hello", press v, then e to select word, then y to yank
+
+const colors = ["red", "blue", "green", "yellow"];
+
+// TRY: Select "green", "blue" using v then appropriate motion, delete with d
+
+
+// ============================================
+// LESSON 3.2: Line Visual Mode (V)
+// ============================================
+// Press 'V' (shift-v) to select entire lines
+// Move up/down to extend selection
+// Great for moving or deleting multiple lines
+
+function add(a, b) {
+    return a + b;
+}
+
+function subtract(a, b) {
+    return a - b;
+}
+
+function multiply(a, b) {
+    return a * b;
+}
+
+// TRY: Go to multiply function, V to select line, j to extend, d to delete
+
+
+// ============================================
+// LESSON 3.3: Block Visual Mode (Ctrl-v)
+// ============================================
+// Press Ctrl-v for VERTICAL block selection
+// This is a Vim superpower - select columns!
+
+const users = [
+    { id: 1, name: "Alice",   role: "admin"  },
+    { id: 2, name: "Bob",     role: "user"   },
+    { id: 3, name: "Charlie", role: "user"   },
+    { id: 4, name: "Diana",   role: "admin"  },
+];
+
+// TRY: Position on first "id", Ctrl-v, move down 3 lines, move right to select "id: X"
+// This selects a BLOCK across multiple lines!
+
+
+// ============================================
+// LESSON 3.4: Block Insert (I) and Append (A)
+// ============================================
+// After Ctrl-v selection, press:
+//   I - insert at START of each line in block
+//   A - append at END of each line in block
+
+item1
+item2
+item3
+item4
+item5
+
+// TRY: Select all items with Ctrl-v + j's, then I, type "- ", then Esc
+// Watch it apply to ALL lines!
+
+
+// ============================================
+// LESSON 3.5: Visual Mode + Motions
+// ============================================
+// Combine visual mode with ANY motion you learned:
+//   v + w  = select to next word
+//   v + }  = select to end of paragraph
+//   v + f) = select up to and including )
+//   V + }  = select lines to paragraph end
+
+function processData(input) {
+    const cleaned = input.trim();
+    const parsed = JSON.parse(cleaned);
+    const filtered = parsed.filter(x => x.active);
+    return filtered;
+}
+
+// TRY: On "const cleaned", use V then 2j to select 3 lines
+
+
+// ============================================
+// LESSON 3.6: Reselect & Visual Commands
+// ============================================
+// gv     - reselect last visual selection
+// o      - jump to other end of selection (while in visual)
+// >      - indent selection
+// <      - unindent selection
+// =      - auto-format selection
+// u/U    - lowercase/uppercase selection
+
+MAKE THIS LOWERCASE
+make this uppercase
+
+// TRY: Select "MAKE THIS LOWERCASE", press u
+// TRY: Select "make this uppercase", press U
