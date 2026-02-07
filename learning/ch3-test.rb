@@ -75,7 +75,7 @@ end
 # ============================================
 
 screaming_constant = "too loud"
-  WHISPER_CONSTANT = "speak up"
+WHISPER_CONSTANT = "speak up"
 
 # ============================================
 # BONUS: Reselect

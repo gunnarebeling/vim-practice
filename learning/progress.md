@@ -2,7 +2,7 @@
 
 ## Student Stats
 - **Started**: 2026-01-31
-- **Current Chapter**: 3
+- **Current Chapter**: 5
 - **Current Level**: Beginner
 
 ---
@@ -14,6 +14,8 @@
 | 2026-01-31 | 1 | Lessons 1.1-1.5 | - | - | - | Covered h/j/k/l, word motions, line motions, file nav, search |
 | 2026-01-31 | 1 | Lesson 1.6 + Test | <2min | - | Pass | Jump motions (%, ]m, [m, f/t), Chapter 1 complete |
 | 2026-01-31 | 2 | Lessons 2.1-2.5 + Test | <3min | <1min | Pass | Insert, delete, change, yank/put, dot command. Chapter 2 complete |
+| 2026-02-03 | 3 | Visual Mode Test | <3min | - | Pass | Character, line, block visual. Chapter 3 complete |
+| 2026-02-03 | 4 | Buffers, Windows & Tabs | <2min | - | Pass | Splits, tabs, buffer navigation. Chapter 4 complete |
 
 ---
 
@@ -35,16 +37,16 @@
 - [x] Undo/redo (u, Ctrl-r, .)
 
 ### Chapter 3: Visual Mode Mastery
-- [ ] Character visual (v)
-- [ ] Line visual (V)
-- [ ] Block visual (Ctrl-v)
-- [ ] Visual selections with motions
+- [x] Character visual (v)
+- [x] Line visual (V)
+- [x] Block visual (Ctrl-v)
+- [x] Visual selections with motions
 
 ### Chapter 4: Buffers, Windows & Tabs
-- [ ] Buffer navigation
-- [ ] Window splits
-- [ ] Tab management
-- [ ] LazyVim buffer keymaps
+- [x] Buffer navigation
+- [x] Window splits
+- [x] Tab management
+- [x] LazyVim buffer keymaps
 
 ### Chapter 5: LazyVim Specifics
 - [ ] File explorer (neo-tree)
